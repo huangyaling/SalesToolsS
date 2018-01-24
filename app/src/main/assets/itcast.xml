@@ -1,0 +1,235 @@
+<testcases>
+    <testcase id="0">
+        <title>Bluetooth Test</title>
+        <code>90</code>
+        <imgid>asus_diagnostic_img_bt_test</imgid>
+        <!--<contextid>The BlueTooth Test is used to test whether Bluetooth is working or not.\n(This test procedure will be started automatically without any manual operations.)</contextid>-->
+        <activity>controller.testcase.BtTestingAct</activity>
+        <contextid>context_bt</contextid>
+        <successid>PASSDialog_BT_Test</successid>
+        <failid>FAILDialog_BT_Test</failid>
+        <testtype>0</testtype>
+    </testcase>
+    <testcase id="1">
+        <title>Wifi Test</title>
+        <code>91</code>
+        <imgid>asus_diagnostic_img_wifibus_test</imgid>
+        <!--<contextid>The Wi-Fi Test is used to test whether the Wi-Fi function of this device is working or not.\n(This test procedure will be started automatically without any manual operation.)</contextid>-->
+        <activity>controller.testcase.WifiTestingAct</activity>
+        <contextid>context_wifibus</contextid>
+        <successid>PASSDialog_WiFiBus_Test</successid>
+        <failid>FAILDialog_WiFiBus_Test</failid>
+        <testtype>0</testtype>
+    </testcase>
+    <testcase id="2">
+        <title>Battery Test</title>
+        <code>92</code>
+        <imgid>asus_diagnostic_img_battery_test</imgid>
+        <!--<contextid>The Battery Test is used to test whether a battery is existing in device or not.\n(This test procedure will be started automatically without any manual operations.)</contextid>-->
+        <activity>controller.testcase.BatteryTestingAct</activity>
+        <contextid>context_battery</contextid>
+        <successid>PASSDialog_Battery_Test</successid>
+        <failid>FAILDialog_Battery_Test</failid>
+        <testtype>0</testtype>
+    </testcase>
+
+    <testcase id="3">
+        <title>ECompass Test</title>
+        <code>93</code>
+        <imgid>asus_diagnostic_img_ecompass_test</imgid>
+        <!--<contextid>The ECompass Test is used to test whether the ECompass sensor is working or not.\n(This test procedure will be started automatically without any manual operations.)</contextid>-->
+        <activity>controller.testcase.ECompassTestingAct</activity>
+        <contextid>context_ecompass</contextid>
+        <successid>PASSDialog_ECompass_Test</successid>
+        <failid>FAILDialog_ECompass_Test</failid>
+        <testtype>0</testtype>
+    </testcase>
+
+    <testcase id="4">
+        <title>GSensor Test</title>
+        <code>94</code>
+        <imgid>asus_diagnostic_img_gsensor_test</imgid>
+        <!--<contextid>The GSensor Test is used to test whether the gravity sensor is working or not.\nTest Procedure:\n1.Roll the device.\n2.If the device detects the gravity,the direction turns on.\n3.If all of directions turn on,this test procedure will finish automatically,else press the [FAIL] button to terminate this test procedure.</contextid>-->
+        <activity>controller.testcase.GSensorTestingAct</activity>
+        <contextid>context_gsensor</contextid>
+        <successid>PASSDialog_GSensor_Test</successid>
+        <failid>FAILDialog_GSensor_Test</failid>
+        <testtype>1</testtype>
+    </testcase>
+    <testcase id="5">
+        <title>Keypad Test</title>
+        <code>95</code>
+        <imgid>asus_diagnostic_img_keypad_test</imgid>
+        <!--<contextid>The Keypad Test is used to test whether the Keypad is working or not.\nTest Procedure:\n1.According to the notice,press specified Keypad.\n2.If the Keypad works well,this test procedure will finish automatically,else press the [FAIL] button to terminate this test procedure.</contextid>-->
+        <activity>controller.testcase.KeypadTestingAct</activity>
+        <contextid>context_keypad</contextid>
+        <successid>PASSDialog_Keypad_Test</successid>
+        <failid>FAILDialog_Keypad_Test</failid>
+        <testtype>1</testtype>
+    </testcase>
+    <testcase id="6">
+        <title>Touch Test</title>
+        <code>96</code>
+        <imgid>asus_diagnostic_img_touch_test</imgid>
+        <!--<contextid>The Touch Test is used to test the sensitivity of the touch screen by finger pressure.Test Procedure:\n1.Draw on the screen using fingers.\n2.Press back button to return result,if drawing successful,press the [PASS] button,else press the [FAIL] button to terminate this test procedure.</contextid>-->
+        <activity>controller.testcase.TouchTestingAct</activity>
+        <contextid>context_touch</contextid>
+        <successid>PASSDialog_Touch_Test</successid>
+        <failid>FAILDialog_Touch_Test</failid>
+        <testtype>1</testtype>
+    </testcase>
+    <testcase id="7">
+        <title>MultiTouch Test</title>
+        <code>97</code>
+        <imgid>asus_diagnostic_img_multitouch_test</imgid>
+        <!--<contextid>The Multiple Touch is used to test whether the multiple touch function of the panel is working or not.\nTest procedure:\n1.Put fingers on the screen.\n2.If the multitouch function works well,this test procedure will finish automatically,else press the [FAIL] button to terminate this test procedure.</contextid>-->
+        <activity>controller.testcase.MultiTouchTestingAct</activity>
+        <contextid>context_multitouch</contextid>
+        <successid>PASSDialog_MultiTouch_Test</successid>
+        <failid>FAILDialog_MultiTouch_Test</failid>
+        <testtype>1</testtype>
+    </testcase>
+    <testcase id="8">
+        <title>Vibrator Test</title>
+        <code>98</code>
+        <imgid>asus_diagnostic_img_vibrator_test</imgid>
+        <!--<contextid>The Vibrator Test is used to test whether the vibration function of this device is working or not.The Procedure:\n1.Press button to control vibration on or vibration off.\n2.If the vibration function works well,press the [PASS] button,else press the [FAIL] button to terminate this test procedure.</contextid>-->
+        <activity>controller.testcase.VibratorTestingAct</activity>
+        <contextid>context_vibrator</contextid>
+        <successid>PASSDialog_Vibrator_Test</successid>
+        <failid>FAILDialog_Vibrator_Test</failid>
+        <testtype>1</testtype>
+    </testcase>
+    <testcase id="9">
+        <title>Receiver Test</title>
+        <code>99</code>
+        <imgid>asus_diagnostic_img_receiver_test</imgid>
+        <!--<contextid>The Receiver Test is used to test whether the receiver function is working or not.The Procedure:\n1.Receiver of device will make a sound.\n2.If the receiver function works well,press the [PASS] button,else press the [FAIL] button to terminate this test procedure.</contextid>-->
+        <activity>controller.testcase.ReceiverTestingAct</activity>
+        <contextid>context_receiver</contextid>
+        <successid>PASSDialog_Receiver1_Test</successid>
+        <failid>FAILDialog_Receiver1_Test</failid>
+        <testtype>1</testtype>
+    </testcase>
+    <testcase id="10">
+        <title>Speaker Test</title>
+        <code>910</code>
+        <imgid>asus_diagnostic_img_speaker_test</imgid>
+        <!--<contextid>The Speaker Test is used to test whether the speaker function of this device is working or not.\nTest Procedure:\n1.Click [START] button to broadcast sound.\n2.If the speaker function works well,press the [PASS] button,else press the [FAIL] button to terminate this test procedure.</contextid>-->
+        <activity>controller.testcase.SpeakerTestingAct</activity>
+        <contextid>context_speaker</contextid>
+        <successid>PASSDialog_Speaker_Test</successid>
+        <failid>FAILDialog_Speaker_Test</failid>
+        <testtype>1</testtype>
+    </testcase>
+    <testcase id="11">
+        <title>BroadMic Test</title>
+        <code>911</code>
+        <imgid>asus_diagnostic_img_boardmic_test</imgid>
+        <!--<contextid>The Board Mic Test is used to test whether board mic is working or not.\nTest Procedure:\n1.Press [START] button,start to record.\n2.According to the result played after recording,if the mic function of headset works well,press the [PASS] button,else press the [FAIL] button to terminate this test procedure.</contextid>-->
+        <activity>controller.testcase.BroadMicTestingAct</activity>
+        <contextid>context_broadmic</contextid>
+        <successid>PASSDialog_BoardMic_Test</successid>
+        <failid>FAILDialog_BoardMic_Test</failid>
+        <testtype>1</testtype>
+    </testcase>
+    <testcase id="12">
+        <title>Main Camera Capture Test</title>
+        <code>912</code>
+        <imgid>asus_diagnostic_img_maincamcapture_test</imgid>
+        <!--<contextid>The Main Camera Capture Test is used to test whether the main camera in device is working or not.\nTest Procedure.\n1.Click [Capture] button to capture photo.\n2.If photo capture successful,press the [PASS] button,else press the [FAIL] button to terminate this test procedure.</contextid>-->
+        <activity>controller.testcase.MainCamTestingAct</activity>
+        <contextid>context_maincamera</contextid>
+        <successid>PASSDialog_MainCamCapture_Test</successid>
+        <failid>FAILDialog_MainCamCapture_Test</failid>
+        <testtype>1</testtype>
+    </testcase>
+    <testcase id="13">
+        <title>Front Camera Capture Test</title>
+        <code>913</code>
+        <imgid>asus_diagnostic_img_vgacamcapture_test</imgid>
+        <!--<contextid>The Front Camera Capture Test is used to test whether the front camera capture function of this device is working or not.\nTest Procedure:\n1.Click [CAPTURE] button to capture photo.\n2.If photo capture successful,press the [PASS] button,else press the [FAIL] button to terminate this test procedure.</contextid>-->
+        <activity>controller.testcase.FrontCamTestingAct</activity>
+        <contextid>context_frontcamera</contextid>
+        <successid>PASSDialog_VGACamCapture_Test</successid>
+        <failid>FAILDialog_VGACamCapture_Test</failid>
+        <testtype>1</testtype>
+    </testcase>
+    <testcase id="14">
+        <title>CameraFlash Test</title>
+        <code>914</code>
+        <imgid>asus_diagnostic_img_cameraflash_test</imgid>
+        <!--<contextid>The CameraFlash Test is used to test whether the camera flash is working or not.\nTest Procedure:\n1.When start to test,device will open the camera flash automatically.\n2.If the camera flash function works well,press the [PASS] button,else press the [FAIL] button to terminate this test procedure.</contextid>-->
+        <activity>controller.testcase.FlashTestingAct</activity>
+        <contextid>context_cameraflash</contextid>
+        <successid>PASSDialog_CameraFlash_Test</successid>
+        <failid>FAILDialog_CameraFlash_Test</failid>
+        <testtype>1</testtype>
+    </testcase>
+    <testcase id="15">
+        <title>Display Test</title>
+        <code>915</code>
+        <imgid>asus_diagnostic_img_display_test</imgid>
+        <!--<contextid>The Display Test is used to test whether the RGB color model and brightness of LCD are working ot not.\nTest Procedure:\n1.Click screen to change background.\n2.If the display function works well,press the [PASS] button,else press the [FAIL] button to terminate this test procedure.</contextid>-->
+        <activity>controller.testcase.DisplayTestingAct</activity>
+        <contextid>context_display</contextid>
+        <successid>PASSDialog_Display_Test</successid>
+        <failid>FAILDialog_Display_Test</failid>
+        <testtype>1</testtype>
+    </testcase>
+    <testcase id="16">
+        <title>Headset Test</title>
+        <code>916</code>
+        <imgid>asus_diagnostic_img_headset_test</imgid>
+        <!--<contextid>The Headset Test is used to test whether left and right channels of the headset are working or not.\nTest Procedure:\n1.Connect headset to device.\n2.Press [START] button.\n3.Broadcast sound to left channel.\n4.Broadcast sound to right channel.\n5.If the headset function works well,press the [PASS] button,else press the [FAIL] button to terminate this test procedure.</contextid>-->
+        <activity>controller.testcase.HeadsetTestingAct</activity>
+        <contextid>context_headset</contextid>
+        <successid>PASSDialog_Headset_Test</successid>
+        <failid>FAILDialog_Headset_Test</failid>
+        <testtype>2</testtype>
+    </testcase>
+    <testcase id="17">
+        <title>Headset Mic Test</title>
+        <code>917</code>
+        <imgid>asus_diagnostic_img_headsetmic_test</imgid>
+        <!--<contextid>The Headset Mic Test is used to test whether the mic of headset is working or not.\nTest Procedure:\n1.Connect headset to device.\n2.Press START button,start to record.\n3,According to the result played after recording,if the mic function of headset works well,press the [PASS] button,else press the [FAIL] button to terminate this test procedure.</contextid>-->
+        <activity>controller.testcase.HeadsetMicTestingAct</activity>
+        <contextid>context_headsetmic</contextid>
+        <successid>PASSDialog_HeadsetMic_Test</successid>
+        <failid>FAILDialog_HeadsetMic_Test</failid>
+        <testtype>2</testtype>
+    </testcase>
+    <testcase id="18">
+        <title>Headset Key Test</title>
+        <code>918</code>
+        <imgid>asus_diagnostic_img_headsetkey_test</imgid>
+        <!--<contextid>The Headset Main Key Test is used to test the key on headset is working or not.\nTest Procedure:\n1.Connect headset to device.\n2.Click the key on headset.\n3.If the key function of headset works well,this test procedure will finish automatically,else press the [FAIL] button to terminate this test procedure.</contextid>-->
+        <activity>controller.testcase.HeadsetKeyTestingAct</activity>
+        <contextid>context_headsetkey</contextid>
+        <successid>PASSDialog_HeadsetKey_Test</successid>
+        <failid>FAILDialog_HeadsetKey_Test</failid>
+        <testtype>2</testtype>
+    </testcase>
+    <testcase id="19">
+        <title>SDcard Test</title>
+        <code>919</code>
+        <imgid>asus_diagnostic_img_sdcard_test</imgid>
+        <!--<contextid>The SD Card Test is used to test whether the SD card reader function is working or not.\nTest Procedure:\n1.Put the SD card in the device.\n2.The test procedure will be started automatically without any manual operations.</contextid>-->
+        <activity>controller.testcase.SDcardTestingAct</activity>
+        <contextid>context_sdcard</contextid>
+        <successid>PASSDialog_SDcard_Test</successid>
+        <failid>FAILDialog_SDcard_Test</failid>
+        <testtype>0</testtype>
+    </testcase>
+    <testcase id="20">
+        <title>SIMcard Test</title>
+        <code>920</code>
+        <imgid>asus_diagnostic_img_simcard_test</imgid>
+        <!--<contextid>The SIMcard Test is sued to test whether SIMcard is connecting to the device ot not.\nTest Procedure.\n1.Put the SIM card in the device.\n2.The test procedure will be started automatically without any manual operations.</contextid>-->
+        <activity>controller.testcase.SIMcardTestingAct</activity>
+        <contextid>context_simcard</contextid>
+        <successid>PASSDialog_SIMcard_Test</successid>
+        <failid>FAILDialog_SIMcard_Test</failid>
+        <testtype>0</testtype>
+    </testcase>
+</testcases>
